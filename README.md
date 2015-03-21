@@ -1,10 +1,10 @@
-== README.md
+## README.md
 This file
 
-== CodeBook.md
+## CodeBook.md
 Description of all variables within the dataset
 
-== run_analysis.R
+## run_analysis.R
 A monolithic R script for conversion of Human Activity Recognition database from source files and produce the following:
   * filteredDF - a dataframe, containing each value for each measured variable of type "mean" or "std", along with subject, activity, and which dataset was used.
   * summaryDF - a dataframe, containing the average of each measured variable of the type "mean" or "std", grouped by the subject and the activity.
