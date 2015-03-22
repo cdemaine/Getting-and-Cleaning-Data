@@ -26,10 +26,10 @@ Data transformation is executed by the run_analysis.R script.  The script:
 1.  Creates a second, independent tidy data set **summaryDF** with the average of each variable for each activity and each subject.
 
 ## filteredDF data frame parameters
-|Column | Label | Description |
-|-------|-------|-------------|
-|[1]| tBodyAcc-mean()-X| **Human Activity Recognition Database data.**|          
-|[2]| tBodyAcc-mean()-Y | Refer to the raw data files readme.txt and features_info.txt files for remaining parameters.|
+|Column | Label | Description | Data Format |
+|-------|-------|-------------|-------------|
+|[1]| tBodyAcc-mean()-X| **Human Activity Recognition Database data.**| Refer to the raw data files readme.txt and features_info.txt files for parameter descriptions and data format. |         
+|[2]| tBodyAcc-mean()-Y | |
 |[3]| tBodyAcc-mean()-Z ||
 |[4]| tBodyAcc-std()-X ||              
 |[5]| tBodyAcc-std()-Y || ||              
@@ -107,17 +107,19 @@ Data transformation is executed by the run_analysis.R script.  The script:
 |[77]| fBodyBodyGyroJerkMag-mean() ||    
 |[78]| fBodyBodyGyroJerkMag-std() ||     
 |[79]| fBodyBodyGyroJerkMag-meanFreq() ||
-|[80]| subject | subject parameter from Human Activity Recognition Database data.  Integer data, but other formats are supported.  Source dataset has subjects 1-20, complete.  |                     
-|[81]| activity | subject activity from Human Activity Recognition Database data.  Factorized based on source dataset's activity_labels.txt file.  Source dataset has activities 1-6, complete.  1 WALKING, 2 WALKING_UPSTAIRS, 3 WALKING_DOWNSTAIRS, 4 SITTING, 5 STANDING, 6 LAYING |
+|[80]| subject | subject parameter from Human Activity Recognition Database data.  Integer data, but other formats are supported. | integer: dataset dependent, source dataset has subjects 1-20, complete. |                    
+|[81]| activity | subject activity from Human Activity Recognition Database data.  Factorized based on source dataset's activity_labels.txt file.| factor: dataset dependent, source dataset has activities 1-6, complete.  1 WALKING, 2 WALKING_UPSTAIRS, 3 WALKING_DOWNSTAIRS, 4 SITTING, 5 STANDING, 6 LAYING  |
+|[82]| source | original data source | character: train or test | 
+
                  
 ## summaryDF data frame parameters
-|Column | Label | Description |
-|-------|-------|-------------|
-|[1]| Subject | subject parameter from Human Activity Recognition Database data.  Integer data, but other formats are supported.  Source dataset has subjects 1-20, complete.   |                                            
-|[2]| Activity | subject activity from Human Activity Recognition Database data.  Factorized based on source dataset's activity_labels.txt file.  Source dataset has activities 1-6, complete.  1 WALKING, 2 WALKING_UPSTAIRS, 3 WALKING_DOWNSTAIRS, 4 SITTING, 5 STANDING, 6 LAYING |                       
-|[3]| tBodyAcc-mean()-X | **Human Activity Recognition Database data, averaged by subject and activity.** |     
-|[4]| tBodyAcc-mean()-Y | Refer to the raw data files readme.txt and features_info.txt files for remaining parameters.|         
-|[5]| tBodyAcc-mean()-Z | |              
+|Column | Label | Description | Data Format |
+|-------|-------|-------------|-------------|
+|[1]| Subject | subject parameter from Human Activity Recognition Database data.  Integer data, but other formats are supported. | integer: dataset dependent, source dataset has subjects 1-20, complete. |      
+|[2]| | subject activity from Human Activity Recognition Database data.  Factorized based on source dataset's activity_labels.txt file.| factor: dataset dependent, source dataset has activities 1-6, complete.  1 WALKING, 2 WALKING_UPSTAIRS, 3 WALKING_DOWNSTAIRS, 4 SITTING, 5 STANDING, 6 LAYING  |                    
+|[3]| tBodyAcc-mean()-X |  **Human Activity Recognition Database data.**| Refer to the raw data files readme.txt and features_info.txt files for parameter descriptions and data format. |     
+|[4]| tBodyAcc-mean()-Y ||        
+|[5]| tBodyAcc-mean()-Z ||              
 |[6]| tBodyAcc-std()-X ||               
 |[7]| tBodyAcc-std()-Y ||               
 |[8]| tBodyAcc-std()-Z ||               

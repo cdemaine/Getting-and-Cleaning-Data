@@ -104,7 +104,7 @@ rm(x_testDF)
 
 # Replace column names with measurements (feature, from features dataframe)
 
-colnames(completeDF) <- c(featuresDF$feature, "subject", "activity")
+colnames(completeDF) <- c(featuresDF$feature, "subject", "activity", "source")
 
 # Remove columns that don't match this pattern, using GREP
   # -mean
