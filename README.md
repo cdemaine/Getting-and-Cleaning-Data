@@ -1,6 +1,8 @@
 ## Getting And Cleaning Data Assignment 1
 An R script for conversion of Human Activity Recognition database from two independent source files into mean and standard deviation data, as well as summarizing that data based on subjects and activity.
 
+The resultant datasets are tidy, with all columns labeled and described per CodeBook.md, and one row per either measurement set or summary group.
+
 See CodeBook.md for more details.
 
 ## README.md

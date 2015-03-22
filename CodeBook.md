@@ -25,7 +25,10 @@ Data transformation is executed by the run_analysis.R script.  The script:
 1.  Appropriately labels the data set with descriptive variable names.  The labels are retained from the data source's features.txt file.
 1.  Creates a second, independent tidy data set **summaryDF** with the average of each variable for each activity and each subject.
 
-## filteredDF data frame parameters
+## filteredDF 
+Tidy data, labeled per the table below, with one row per measurement set.
+
+### Data frame parameters
 |Column | Label | Description | Data Format |
 |-------|-------|-------------|-------------|
 |[1]| tBodyAcc-mean()-X| **Human Activity Recognition Database data.**| Refer to the raw data files readme.txt and features_info.txt files for parameter descriptions and data format. |         
@@ -112,11 +115,14 @@ Data transformation is executed by the run_analysis.R script.  The script:
 |[82]| source | original data source | character: train or test | 
 
                  
-## summaryDF data frame parameters
+## summaryDF 
+Tidy data, labeled per the table below, with one row per summary grouping set.
+
+### data frame parameters
 |Column | Label | Description | Data Format |
 |-------|-------|-------------|-------------|
 |[1]| Subject | subject parameter from Human Activity Recognition Database data.  Integer data, but other formats are supported. | integer: dataset dependent, source dataset has subjects 1-20, complete. |      
-|[2]| | subject activity from Human Activity Recognition Database data.  Factorized based on source dataset's activity_labels.txt file.| factor: dataset dependent, source dataset has activities 1-6, complete.  1 WALKING, 2 WALKING_UPSTAIRS, 3 WALKING_DOWNSTAIRS, 4 SITTING, 5 STANDING, 6 LAYING  |                    
+|[2]| Activity | subject activity from Human Activity Recognition Database data.  Factorized based on source dataset's activity_labels.txt file.| factor: dataset dependent, source dataset has activities 1-6, complete.  1 WALKING, 2 WALKING_UPSTAIRS, 3 WALKING_DOWNSTAIRS, 4 SITTING, 5 STANDING, 6 LAYING  |                    
 |[3]| tBodyAcc-mean()-X |  **Human Activity Recognition Database data.**| Refer to the raw data files readme.txt and features_info.txt files for parameter descriptions and data format. |     
 |[4]| tBodyAcc-mean()-Y ||        
 |[5]| tBodyAcc-mean()-Z ||              
