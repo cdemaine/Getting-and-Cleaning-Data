@@ -2,7 +2,9 @@
 This file
 
 ## CodeBook.md
-Description of all variables within the dataset
+  * Description of data source
+  * Description of data transformations
+  * Description of output
 
 ## run_analysis.R
 A monolithic R script for conversion of Human Activity Recognition database from source files and produce the following:

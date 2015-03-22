@@ -1,5 +1,9 @@
 # run_analysis.r  - See README.md for more information
 
+# run_analysis.R must be run from witin the Human Activity 
+# Recognition database folder, and will look for files within 
+# that directory as well as ./train/ and ./test/.
+
 cat("Running run_analysis.R.\n")
 
 # Load environment
